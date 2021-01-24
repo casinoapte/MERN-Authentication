@@ -1,0 +1,12 @@
+.header {
+    outline: 1px solid red;
+    margin: -20px -20px;
+    height: 70px;
+    background-color: red;
+
+}
+
+
+button {
+    margin-top: 30px;
+}

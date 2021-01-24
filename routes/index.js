@@ -4,12 +4,14 @@ const router = require("express").Router();
 const authRoutes = require("./auth");
 
 
-// Routes
+// Routes // 
+
 // router.use("/api", apiRoutes);
 router.use("/auth", authRoutes);
 
 
-// If no API routes are hit, send the React app
+// If No API Routes Are Hit, Send The React App // 
+
 router.use(function(req, res) {
   res.sendFile(path.join(__dirname, "../client/build/index.html"));
 });
