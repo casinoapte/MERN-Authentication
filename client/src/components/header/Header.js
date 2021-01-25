@@ -22,6 +22,14 @@ export default function Header() {
 
     }
 
+    const logout = () => {
+        setUserData({
+            token: undefined,
+            user: undefined
+        })
+        localStorage.setItem("auth-token", "")
+    }
+
     return (
 
         <div className="header">
@@ -34,8 +42,9 @@ export default function Header() {
                         (
                             <div className="col-4 offset-10">
 
+                                <button>{userData.user.username}</button>
                                 <button onClick={home}>Home</button>
-                                <button>Log out</button>
+                                <button onClick={logout}>Log out</button>
                             </div>
 
                         ) : (

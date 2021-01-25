@@ -4,9 +4,8 @@ import axios from 'axios'
 import UserContext from './contexts/UserContext'
 import Home from './pages/Home';
 import Header from './components/header/Header';
-import Login from './components/auth/Login';
-import Register from './components/auth/Register';
-
+import Login from './components/auth/login/Login';
+import Register from './components/auth/register/Register';
 
 
 function App() {

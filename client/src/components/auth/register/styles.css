@@ -1,0 +1,16 @@
+.container {
+    margin-top: 50px;
+}
+
+.register-box {
+    border-style: solid;
+    border-radius: 25px;
+    border-width: 1px;
+    border-color: grey;
+    height: 300px;
+
+}
+
+input {
+    margin-left: 5px;
+}
